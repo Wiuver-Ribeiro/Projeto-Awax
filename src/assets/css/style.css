@@ -296,8 +296,44 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .section-projects--photo {
   width: 280px;
+}
+
+
+.section-projects--photoarea {
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.section-projects--photoarea img {
+  width: 260px;
+  height: 160px;
+}
+
+.section-projects--photoinfo {
+  position:absolute;
+  background-color:rgba(0, 0, 0, 0.5);
+  width: 260px;
+  height: 160px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  cursor:pointer;
+  transition: all ease 0.2s;
+}
+.section-projects--photoinfo h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-projects--photoarea:hover
+.section-projects--photoinfo {
+  display: flex;
 }
